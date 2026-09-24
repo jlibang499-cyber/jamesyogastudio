@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>James Yoga Studio</title>
+<meta name="description" content="Yoga classes in 13 UK cities plus live online 1-on-1 coaching with a real teacher. First class free. One membership for London, Manchester, Birmingham, Glasgow, Edinburgh and more.">
+<!-- TODO before launch: replace the domain below with the live domain -->
+<link rel="canonical" href="https://www.jamesyogastudio.co.uk/">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#16222A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="James Yoga Studio">
+<meta property="og:title" content="James Yoga Studio · Yoga in 13 UK cities + live 1-on-1 online coaching">
+<meta property="og:description" content="From a Night Tube depot to 13 cities. Studio classes, live 1-on-1 online coaching, and your first class free.">
+<meta property="og:url" content="https://www.jamesyogastudio.co.uk/">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@600;800&family=Figtree:wght@400;500;600;700&family=Gloock&display=swap">
+
+<script>
+  /* ---------- Google Ads / GA4 with Consent Mode v2 (UK GDPR) ----------
+     Put your tag ID in GTAG_ID (e.g. "AW-123456789" or "G-XXXXXXX").
+     Consent is denied by default and only granted from the cookie bar. */
+  window.GTAG_ID = "";
+  window.ADS_CONVERSION = ""; /* e.g. "AW-123456789/AbCdEfGhIj" for the lead form */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag("consent", "default", {
+    ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied",
+    analytics_storage: "denied", wait_for_update: 500
+  });
+  gtag("set", "url_passthrough", true);
+  gtag("set", "ads_data_redaction", true);
+  if (window.GTAG_ID) {
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + window.GTAG_ID;
+    document.head.appendChild(s);
+    gtag("js", new Date());
+    gtag("config", window.GTAG_ID);
+  }
+</script>
+
+<style>
+  :root {
+    --ground: #EDF1EE;
+    --surface: #FFFFFF;
+    --surface-2: #E2E8E4;
+    --ink: #16222A;
+    --ink-2: #4B5C62;
+    --line: #CFD8D3;
+    --moss: #365F43;
+    --moss-hover: #2B4D36;
+    --on-moss: #FFFFFF;
+    --moss-soft: #DCE8DF;
+    --amber: #F2A900;
+    --board: #0D1316;
+    --board-line: #1F2A2F;
+    --board-dim: #6E5A1E;
+    --focus: #F2A900;
+    --shadow: 0 1px 2px rgba(22,34,42,.06), 0 12px 32px -16px rgba(22,34,42,.25);
+
+    --f-display: "Gloock", "Georgia", "Times New Roman", serif;
+    --f-body: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+    --f-board: "Doto", "Courier New", ui-monospace, monospace;
+
+    --step--1: .875rem;
+    --step-0: 1.0625rem;
+    --step-1: 1.25rem;
+    --step-2: 1.625rem;
+    --step-3: clamp(1.9rem, 1.4rem + 2vw, 2.6rem);
+    --step-4: clamp(2.4rem, 1.6rem + 3.6vw, 4rem);
+
+    --gutter: clamp(16px, 4vw, 40px);
+    --maxw: 1180px;
+    --radius: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #0F1619;
+      --surface: #162126;
+      --surface-2: #1C292F;
+      --ink: #E4EBE7;
+      --ink-2: #9EAFB2;
+      --line: #2A383E;
+      --moss: #86B893;
+      --moss-hover: #9CCAA8;
+      --on-moss: #0F1619;
+      --moss-soft: #1E3326;
+      --board: #080C0E;
+      --board-line: #1A2428;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 12px 32px -16px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #0F1619;
+    --surface: #162126;
+    --surface-2: #1C292F;
+    --ink: #E4EBE7;
+    --ink-2: #9EAFB2;
+    --line: #2A383E;
+    --moss: #86B893;
+    --moss-hover: #9CCAA8;
+    --on-moss: #0F1619;
+    --moss-soft: #1E3326;
+    --board: #080C0E;
+    --board-line: #1A2428;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 12px 32px -16px rgba(0,0,0,.6);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 400 var(--step-0)/1.6 var(--f-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  img, svg { max-width: 100%; }
+  a { color: inherit; }
+  h1, h2, h3 { margin: 0; text-wrap: balance; font-weight: 400; }
+  h1, h2 { font-family: var(--f-display); letter-spacing: -.01em; line-height: 1.08; }
+  h2 { font-size: var(--step-3); }
+  h3 { font-family: var(--f-body); font-weight: 700; font-size: var(--step-1); line-height: 1.3; }
+  p { margin: 0; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+  [hidden] { display: none !important; }
+
+  .wrap { max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
+  .section { padding-block: clamp(56px, 8vw, 104px); }
+  .eyebrow {
+    font-size: var(--step--1); font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--moss);
+  }
+  .lede { color: var(--ink-2); font-size: var(--step-1); max-width: 60ch; }
+  .section-head { display: grid; gap: 14px; margin-bottom: clamp(32px, 5vw, 56px); max-width: 720px; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 48px; padding: 12px 22px; border-radius: 999px;
+    font: 700 1rem/1.2 var(--f-body); text-decoration: none; cursor: pointer;
+    border: 2px solid transparent; transition: background-color .15s, color .15s, border-color .15s, transform .15s;
+  }
+  .btn-primary { background: var(--moss); color: var(--on-moss); }
+  .btn-primary:hover { background: var(--moss-hover); }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+  .btn-ghost:hover { background: var(--ink); color: var(--ground); }
+  .btn:active { transform: translateY(1px); }
+
+  /* Header */
+  .site-header {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40;
+    background: color-mix(in srgb, var(--ground) 88%, transparent);
+    backdrop-filter: saturate(1.4) blur(10px);
+    -webkit-backdrop-filter: saturate(1.4) blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; gap: 24px; min-height: 68px; }
+  .brand { display: flex; align-items: baseline; gap: 8px; text-decoration: none; margin-right: auto; }
+  .brand-name { font-family: var(--f-display); font-size: 1.5rem; line-height: 1; }
+  .brand-tag { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); }
+  .nav-links { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-weight: 600; font-size: .95rem; }
+  .nav-links a { text-decoration: none; color: var(--ink-2); }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-phone { font-weight: 700; text-decoration: none; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .nav .btn { min-height: 42px; padding: 8px 18px; }
+  @media (max-width: 980px) { .nav-links { display: none; } }
+  @media (max-width: 560px) { .nav-phone, .brand-tag { display: none; } }
+
+  /* Hero */
+  .hero { padding-block: clamp(40px, 6vw, 80px) clamp(48px, 7vw, 88px); }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 64px); align-items: center; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
+  .hero h1 { font-size: var(--step-4); }
+  .hero h1 em { font-style: normal; color: var(--moss); }
+  .hero .lede { margin-top: 20px; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .proof { display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 28px 0 0; padding: 0; list-style: none; font-size: .95rem; font-weight: 600; color: var(--ink-2); }
+  .proof li { display: flex; align-items: center; gap: 8px; }
+  .proof svg { flex: none; color: var(--moss); }
+
+  /* Departure board */
+  .board {
+    background: var(--board); color: var(--amber); border-radius: 14px; padding: 18px 18px 14px;
+    box-shadow: var(--shadow), inset 0 0 0 1px var(--board-line);
+    font-family: var(--f-board); font-weight: 600;
+  }
+  .board-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 0 4px 12px; border-bottom: 1px dashed var(--board-line); }
+  .board-title { font-weight: 800; font-size: 1.05rem; letter-spacing: .12em; text-transform: uppercase; }
+  .board-clock { font-size: 1.35rem; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: .06em; }
+  .board-scroll { overflow-x: auto; }
+  .board table { width: 100%; border-collapse: collapse; font-size: .98rem; min-width: 420px; }
+  .board th { text-align: left; font-weight: 600; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--board-dim); padding: 10px 6px 6px; }
+  .board td { padding: 7px 6px; border-top: 1px solid var(--board-line); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .board td.dest { white-space: normal; }
+  .board tr.pinned td { background: rgba(242,169,0,.09); }
+  .board .status-live { animation: blink 1.4s steps(2, jump-none) infinite; }
+  .board-foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 12px 4px 0; font-size: .82rem; color: var(--board-dim); border-top: 1px dashed var(--board-line); margin-top: 6px; }
+  .board-foot a { color: var(--amber); }
+  @keyframes blink { 50% { opacity: .35; } }
+
+  /* Feature grid */
+  .features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  @media (max-width: 900px) { .features { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 580px) { .features { grid-template-columns: 1fr; } }
+  .feature { background: var(--surface); padding: 28px 26px 30px; display: grid; gap: 10px; align-content: start; }
+  .feature.star { background: var(--moss-soft); }
+  .feature-icon { width: 40px; height: 40px; color: var(--moss); }
+  .feature p { color: var(--ink-2); }
+  .tag { justify-self: start; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; background: var(--moss); color: var(--on-moss); }
+
+  /* Online 1-on-1 */
+  .online { background: var(--surface); border-block: 1px solid var(--line); }
+  .online-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+  @media (max-width: 900px) { .online-grid { grid-template-columns: 1fr; } }
+  .steps { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 22px; counter-reset: step; }
+  .steps li { display: grid; grid-template-columns: 44px 1fr; gap: 16px; counter-increment: step; }
+  .steps li::before {
+    content: counter(step); width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+    border: 2px solid var(--moss); color: var(--moss); font-weight: 700; font-variant-numeric: tabular-nums;
+  }
+  .steps h3 { font-size: 1.08rem; margin-bottom: 2px; }
+  .steps p { color: var(--ink-2); }
+  .online .hero-ctas { margin-top: 32px; }
+
+  .call {
+    background: var(--board); border-radius: 16px; padding: 12px; box-shadow: var(--shadow);
+    display: grid; gap: 10px; position: relative;
+  }
+  .call-main { position: relative; aspect-ratio: 4 / 3; max-width: 100%; border-radius: 10px; overflow: hidden; background: linear-gradient(160deg, #22343B, #15211F); }
+  .call-main svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .call-pip { position: absolute; right: 12px; top: 12px; width: 28%; aspect-ratio: 3 / 4; border-radius: 8px; background: linear-gradient(160deg, #3C5A48, #22352A); border: 2px solid rgba(255,255,255,.2); display: grid; place-items: end start; padding: 6px; }
+  .pill { font: 600 .72rem/1 var(--f-body); color: #fff; background: rgba(0,0,0,.45); padding: 5px 8px; border-radius: 999px; }
+  .call-label { position: absolute; left: 12px; top: 12px; display: flex; gap: 6px; align-items: center; }
+  .rec { width: 8px; height: 8px; border-radius: 50%; background: #E5484D; }
+  .cue {
+    position: absolute; left: 12px; bottom: 12px; right: 12px; max-width: 360px;
+    background: rgba(255,255,255,.94); color: #16222A; border-radius: 10px; padding: 10px 12px; font-size: .92rem; line-height: 1.4;
+  }
+  .cue b { display: block; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: #365F43; }
+  .call-bar { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: #B8C6C4; font-size: .85rem; padding: 2px 4px; }
+  .call-bar strong { color: #fff; font-weight: 600; }
+
+  /* Story */
+  .story-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); }
+  @media (max-width: 900px) { .story-grid { grid-template-columns: 1fr; } }
+  .story-intro { display: grid; gap: 18px; align-content: start; position: sticky; top: 100px; }
+  @media (max-width: 900px) { .story-intro { position: static; } }
+  .story-intro p { color: var(--ink-2); }
+  .pull { font-family: var(--f-display); font-size: var(--step-2); line-height: 1.25; color: var(--ink); border-left: 3px solid var(--amber); padding-left: 18px; }
+  .pull cite { display: block; margin-top: 10px; font: 600 .9rem/1.4 var(--f-body); font-style: normal; color: var(--ink-2); }
+  .timeline { list-style: none; margin: 0; padding: 0; display: grid; }
+  .timeline li { display: grid; grid-template-columns: 76px 1fr; gap: 20px; padding: 22px 0; border-top: 1px solid var(--line); }
+  .timeline li:last-child { border-bottom: 1px solid var(--line); }
+  .year { font-family: var(--f-board); font-weight: 800; font-size: 1.35rem; color: var(--moss); font-variant-numeric: tabular-nums; line-height: 1.3; }
+  .timeline h3 { margin-bottom: 6px; }
+  .timeline p { color: var(--ink-2); }
+
+  /* Cities */
+  .cities { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+  .city {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 20px 20px 18px; display: grid; gap: 6px; grid-template-rows: auto auto 1fr auto;
+  }
+  .city.is-target { border-color: var(--moss); box-shadow: 0 0 0 2px var(--moss); }
+  .city h3 { font-family: var(--f-display); font-weight: 400; font-size: 1.5rem; }
+  .city .area { font-size: .9rem; font-weight: 600; color: var(--moss); }
+  .city p { color: var(--ink-2); font-size: .95rem; }
+  .city a { margin-top: 10px; font-weight: 700; font-size: .95rem; color: var(--ink); text-underline-offset: 3px; }
+  .city.online-card { background: var(--ink); color: var(--ground); border-color: var(--ink); }
+  .city.online-card .area { color: var(--amber); }
+  .city.online-card p, .city.online-card a { color: var(--ground); }
+
+  /* Pricing */
+  .prices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: stretch; }
+  @media (max-width: 900px) { .prices { grid-template-columns: 1fr; max-width: 520px; } }
+  .price {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 28px 26px;
+    display: grid; gap: 14px; grid-template-rows: auto auto auto 1fr auto;
+  }
+  .price.featured { border: 2px solid var(--moss); box-shadow: var(--shadow); }
+  .price .amount { font-family: var(--f-display); font-size: 2.8rem; line-height: 1; font-variant-numeric: tabular-nums; }
+  .price .amount small { font: 600 1rem/1 var(--f-body); color: var(--ink-2); }
+  .price > p { color: var(--ink-2); }
+  .ticks { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; font-size: .97rem; align-content: start; }
+  .ticks li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; }
+  .ticks li::before { content: ""; width: 14px; height: 8px; margin-top: 7px; border-left: 2.5px solid var(--moss); border-bottom: 2.5px solid var(--moss); transform: rotate(-45deg); }
+  .price .btn { width: 100%; }
+  .fine { margin-top: 18px; font-size: .88rem; color: var(--ink-2); }
+
+  /* FAQ */
+  .faq { max-width: 820px; }
+  .faq details { border-top: 1px solid var(--line); }
+  .faq details:last-child { border-bottom: 1px solid var(--line); }
+  .faq summary {
+    cursor: pointer; list-style: none; padding: 20px 40px 20px 0; position: relative;
+    font-weight: 700; font-size: var(--step-1);
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font-size: 1.6rem; font-weight: 400; color: var(--moss); }
+  .faq details[open] summary::after { content: "–"; }
+  .faq details p { padding: 0 0 22px; color: var(--ink-2); max-width: 68ch; }
+
+  /* Booking */
+  .book { background: var(--ink); color: var(--ground); }
+  .book .eyebrow { color: var(--amber); }
+  .book .lede { color: color-mix(in srgb, var(--ground) 75%, var(--ink)); }
+  .book-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+  @media (max-width: 900px) { .book-grid { grid-template-columns: 1fr; } }
+  .book-points { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 12px; }
+  .book-points li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; }
+  .book-points li::before { content: ""; width: 14px; height: 8px; margin-top: 7px; border-left: 2.5px solid var(--amber); border-bottom: 2.5px solid var(--amber); transform: rotate(-45deg); }
+  .call-us { margin-top: 28px; font-size: .95rem; color: color-mix(in srgb, var(--ground) 75%, var(--ink)); }
+  .call-us a { color: var(--ground); font-weight: 700; font-size: 1.25rem; font-variant-numeric: tabular-nums; text-decoration: none; display: inline-block; margin-top: 2px; }
+  .form { background: var(--surface); color: var(--ink); border-radius: 16px; padding: clamp(22px, 3vw, 32px); display: grid; gap: 16px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 560px) { .row { grid-template-columns: 1fr; } }
+  .field { display: grid; gap: 6px; }
+  .field label, .field legend { font-weight: 600; font-size: .92rem; }
+  .field input, .field select {
+    width: 100%; min-height: 48px; padding: 10px 14px; border-radius: 8px;
+    border: 1.5px solid var(--line); background: var(--ground); color: var(--ink); font: 400 1rem/1.3 var(--f-body);
+  }
+  .field input:focus, .field select:focus { border-color: var(--moss); outline: 2px solid var(--moss); outline-offset: 0; }
+  fieldset.field { border: 0; padding: 0; margin: 0; }
+  .choice { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 420px) { .choice { grid-template-columns: 1fr; } }
+  .choice label {
+    display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 10px;
+    cursor: pointer; font-weight: 500; font-size: .95rem; line-height: 1.35; background: var(--ground);
+  }
+  .choice label:has(input:checked) { border-color: var(--moss); background: var(--moss-soft); }
+  .choice input { margin-top: 3px; accent-color: var(--moss); }
+  .choice strong { display: block; font-weight: 700; }
+  .consent { font-size: .84rem; color: var(--ink-2); }
+  .form .btn { width: 100%; min-height: 54px; font-size: 1.05rem; }
+  .form-error { color: #B42318; font-weight: 600; font-size: .92rem; }
+  :root[data-theme="dark"] .form-error { color: #FF8A80; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .form-error { color: #FF8A80; } }
+  .success { text-align: center; padding: 24px 8px; display: grid; gap: 10px; justify-items: center; }
+  .success h3 { font-family: var(--f-display); font-weight: 400; font-size: var(--step-2); }
+  .success p { color: var(--ink-2); max-width: 44ch; }
+
+  /* Footer */
+  .footer { padding-block: 56px 120px; font-size: .92rem; color: var(--ink-2); }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; }
+  @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; } }
+  .footer h3 { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink); margin-bottom: 12px; }
+  .footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+  .footer ul.cols { grid-template-columns: 1fr 1fr; }
+  .footer a { color: var(--ink-2); text-decoration: none; }
+  .footer a:hover { color: var(--ink); text-decoration: underline; }
+  .footer-base { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+
+  /* Sticky mobile CTA + cookie bar */
+  .mobile-cta {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; display: none; gap: 10px;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+    background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -8px 24px -12px rgba(0,0,0,.25);
+  }
+  .mobile-cta .btn { flex: 1; min-height: 48px; padding: 10px 12px; }
+  @media (max-width: 760px) { .mobile-cta { display: flex; } }
+  .cookie {
+    position: fixed; z-index: 60; left: 16px; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    max-width: 520px; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px; box-shadow: var(--shadow); display: grid; gap: 12px; font-size: .92rem;
+  }
+  .cookie p { color: var(--ink-2); }
+  .cookie-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cookie .btn { min-height: 42px; padding: 8px 18px; flex: 1; }
+  @media (max-width: 760px) { .cookie { bottom: calc(84px + env(safe-area-inset-bottom, 0px)); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .board .status-live { animation: none; }
+    .btn { transition: none; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "@id": "https://www.jamesyogastudio.co.uk/#studio",
+  "name": "James Yoga Studio",
+  "description": "Yoga studios in 13 UK cities and live online 1-on-1 yoga coaching.",
+  "url": "https://www.jamesyogastudio.co.uk/",
+  "telephone": "+44 20 7946 0958",
+  "email": "hello@jamesyogastudio.co.uk",
+  "priceRange": "£14–£79",
+  "founder": { "@type": "Person", "name": "James" },
+  "foundingDate": "2018",
+  "areaServed": "GB",
+  "department": [
+    {"@type":"ExerciseGym","name":"James Yoga Studio London – Bermondsey","address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Manchester – Ancoats","address":{"@type":"PostalAddress","addressLocality":"Manchester","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Birmingham – Jewellery Quarter","address":{"@type":"PostalAddress","addressLocality":"Birmingham","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Leeds – Holbeck","address":{"@type":"PostalAddress","addressLocality":"Leeds","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Glasgow – Finnieston","address":{"@type":"PostalAddress","addressLocality":"Glasgow","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Edinburgh – Leith","address":{"@type":"PostalAddress","addressLocality":"Edinburgh","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Liverpool – Baltic Triangle","address":{"@type":"PostalAddress","addressLocality":"Liverpool","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Bristol – Stokes Croft","address":{"@type":"PostalAddress","addressLocality":"Bristol","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Cardiff – Pontcanna","address":{"@type":"PostalAddress","addressLocality":"Cardiff","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Belfast – Cathedral Quarter","address":{"@type":"PostalAddress","addressLocality":"Belfast","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Newcastle – Ouseburn","address":{"@type":"PostalAddress","addressLocality":"Newcastle upon Tyne","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Sheffield – Kelham Island","address":{"@type":"PostalAddress","addressLocality":"Sheffield","addressCountry":"GB"}},
+    {"@type":"ExerciseGym","name":"James Yoga Studio Nottingham – Hockley","address":{"@type":"PostalAddress","addressLocality":"Nottingham","addressCountry":"GB"}}
+  ],
+  "makesOffer": [
+    {"@type":"Offer","name":"First studio class","price":"0","priceCurrency":"GBP"},
+    {"@type":"Offer","name":"Drop-in studio class","price":"14","priceCurrency":"GBP"},
+    {"@type":"Offer","name":"Studio Passport – unlimited classes in every city","price":"79","priceCurrency":"GBP"},
+    {"@type":"Offer","name":"Live online 1-on-1 yoga coaching, 50 minutes","price":"45","priceCurrency":"GBP"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Is my first class really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your first studio class in any of our 13 cities is free, and your first live online 1-on-1 taster (20 minutes) is free too. No card needed to book."}},
+    {"@type":"Question","name":"How does live online 1-on-1 yoga coaching work?","acceptedAnswer":{"@type":"Answer","text":"You pick a coach and a time, join a two-way video call from your phone, tablet or laptop, and your coach watches and corrects your alignment as you move. Afterwards you get a written plan and a replay."}},
+    {"@type":"Question","name":"Can I use one membership in different cities?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Studio Passport covers unlimited classes at every James Yoga studio in the UK, plus Rain Check swaps to online sessions."}},
+    {"@type":"Question","name":"I have never done yoga. Is that a problem?","acceptedAnswer":{"@type":"Answer","text":"Not at all. Around a third of our members start with no experience. Beginner-labelled classes run daily in every city, and a 1-on-1 session is a good way to start if you would rather learn in private."}},
+    {"@type":"Question","name":"Can I cancel my membership?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Studio Passport is rolling monthly with no minimum term. Cancel from your account before your next billing date."}},
+    {"@type":"Question","name":"Do you teach people with injuries or during pregnancy?","acceptedAnswer":{"@type":"Answer","text":"Many of our coaches hold additional training in pregnancy and injury-aware yoga. Tell us when you book and we will match you with the right coach. Please check with your GP or midwife first."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="brand" href="#top" aria-label="James Yoga Studio home">
+      <span class="brand-name">James Yoga</span>
+      <span class="brand-tag">Studio · UK</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#online">1-on-1 Online</a></li>
+      <li><a href="#features">Why James</a></li>
+      <li><a href="#cities">Cities</a></li>
+      <li><a href="#story">Our story</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="nav-phone" href="tel:+442079460958" data-track="call_click">020 7946 0958</a>
+    <a class="btn btn-primary" href="#book" data-track="cta_header">Book free class</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow" id="hero-eyebrow">Yoga studios in 13 UK cities · Live online 1-on-1</p>
+        <h1 style="margin-top:14px" id="hero-title">Yoga classes near you, and a <em>live 1-on-1 coach</em> wherever you are.</h1>
+        <p class="lede" id="hero-lede">Studio classes in London, Manchester, Birmingham, Glasgow and 9 more cities, plus private coaching over live video with a teacher who watches and corrects you as you move. One membership works everywhere.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#book" data-track="cta_hero_trial" data-interest="studio">Book your free first class</a>
+          <a class="btn btn-ghost" href="#book" data-track="cta_hero_online" data-interest="online">Try a free 1-on-1 taster</a>
+        </div>
+        <ul class="proof" aria-label="Highlights">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>First class free</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>No card to book</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Rolling monthly, cancel anytime</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Beginners welcome</li>
+        </ul>
+      </div>
+
+      <aside class="board" aria-label="Next classes departure board">
+        <div class="board-top">
+          <span class="board-title">Next classes</span>
+          <span class="board-clock" id="clock" aria-label="Current UK time">--:--</span>
+        </div>
+        <div class="board-scroll">
+          <table>
+            <thead><tr><th scope="col">Time</th><th scope="col">City</th><th scope="col">Class</th><th scope="col">Status</th></tr></thead>
+            <tbody id="board-rows">
+              <tr><td>NOW</td><td class="dest">ONLINE 1-ON-1</td><td>Your choice</td><td class="status-live">Coach free</td></tr>
+              <tr><td>07:15</td><td class="dest">Manchester</td><td>Sunrise Flow</td><td>On time</td></tr>
+              <tr><td>07:30</td><td class="dest">London</td><td>Rumble Breath</td><td>On time</td></tr>
+              <tr><td>12:30</td><td class="dest">Glasgow</td><td>Commuter Flow</td><td>On time</td></tr>
+              <tr><td>18:00</td><td class="dest">Birmingham</td><td>Slow Vinyasa</td><td>On time</td></tr>
+              <tr><td>22:00</td><td class="dest">Leeds</td><td>Night Owl</td><td>On time</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="board-foot">
+          <span>Mind the gap between work and rest.</span>
+          <a href="#cities">All 13 cities →</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Only at James Yoga</p>
+        <h2>Six things you won't find at your local gym's yoga class</h2>
+      </div>
+      <div class="features">
+        <article class="feature star">
+          <svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="8" width="32" height="22" rx="3"/><path d="M14 35h12M20 30v5"/><circle cx="20" cy="16" r="3"/><path d="M14 25c1-3 3.5-4.5 6-4.5s5 1.5 6 4.5"/></svg>
+          <span class="tag">Signature</span>
+          <h3>Live online 1-on-1 coaching</h3>
+          <p>A real teacher on a two-way video call, watching you and correcting your alignment as you move. It isn't a recording and it isn't an app voice. Sessions start at 20 minutes, from your living room, hotel room or garden shed.</p>
+        </article>
+        <article class="feature">
+          <svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="6" width="28" height="30" rx="3"/><path d="M6 14h28M13 22h14M13 28h9"/><circle cx="30" cy="30" r="6" fill="var(--surface)"/><path d="M27.5 30l2 2 3.5-4"/></svg>
+          <h3>The Studio Passport</h3>
+          <p>One membership, 13 cities. Working in Leeds on Tuesday and Glasgow on Thursday? Your mat's waiting in both. No extra fees and no "home studio" rules.</p>
+        </article>
+        <article class="feature">
+          <svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 30h32M8 30V16a12 12 0 0124 0v14"/><path d="M14 30V18a6 6 0 0112 0v12"/></svg>
+          <h3>Rumble Breath &amp; Commuter Flow</h3>
+          <p>30-minute classes within a short walk of the main station, timed around peak trains, with showers and lockers included. At our railway-arch studios we hold the pose while a train passes overhead. Members love it.</p>
+        </article>
+        <article class="feature">
+          <svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 22a8 8 0 01-.5-16A10 10 0 0130 9a6.5 6.5 0 01-1 13z"/><path d="M13 27l-2 5M20 27l-2 5M27 27l-2 5"/></svg>
+          <h3>Rain Check</h3>
+          <p>Woken up to sideways rain? Swap any studio booking for a live online session up to one hour before class, for free. It's the most British feature we have.</p>
+        </article>
+        <article class="feature">
+          <svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M28 24A12 12 0 1116 8a9 9 0 0012 16z"/><path d="M29 6v4M27 8h4"/></svg>
+          <h3>Night Owl classes</h3>
+          <p>22:00 classes for nurses, drivers, chefs and anyone else whose day ends when everyone else's does. Shift workers get a reduced rate with an NHS, transport or hospitality ID.</p>
+        </article>
+        <article class="feature">
+          <svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="12" width="28" height="7" rx="3.5"/><rect x="6" y="22" width="28" height="7" rx="3.5"/><path d="M10 8h20"/></svg>
+          <h3>Turn up with nothing</h3>
+          <p>Mats, blocks, straps, towels and filtered water are all included. Come straight from the office in your work clothes and we'll lend you the rest, freshly laundered.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONLINE 1-ON-1 -->
+  <section class="section online" id="online">
+    <div class="wrap online-grid">
+      <div>
+        <div class="section-head" style="margin-bottom:0">
+          <p class="eyebrow">Live online 1-on-1 coaching</p>
+          <h2>A private yoga teacher on your screen, watching as you move</h2>
+          <p class="lede">A pre-recorded video can't see that your knee has drifted past your ankle. Your James Yoga coach can, and tells you straight away.</p>
+        </div>
+        <ol class="steps">
+          <li><div><h3>Pick your coach and time</h3><p>Filter by style, language and speciality (back pain, pregnancy, runners, total beginners). Slots run from 06:00 to 22:30, seven days a week.</p></div></li>
+          <li><div><h3>Do a 5-minute movement check</h3><p>Your coach watches a few simple movements to see how you move and where you're tight, then builds the session around you.</p></div></li>
+          <li><div><h3>Practise with live cues</h3><p>Prop your phone or laptop up where it can see your mat. Your coach cues, corrects and adapts in real time over two-way video.</p></div></li>
+          <li><div><h3>Take home your plan</h3><p>After each session you get a written practice plan and a private replay, so you can repeat it on your own between sessions.</p></div></li>
+        </ol>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#book" data-track="cta_online_taster" data-interest="online">Book a free 20-min taster</a>
+          <a class="btn btn-ghost" href="#pricing">See coaching prices</a>
+        </div>
+      </div>
+
+      <figure class="call" style="margin:0" aria-label="Illustration of a live online coaching session">
+        <div class="call-main">
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <rect x="0" y="232" width="400" height="68" fill="#1B2A26"/>
+            <rect x="96" y="238" width="220" height="10" rx="5" fill="#3F6A4A"/>
+            <!-- Warrior II figure -->
+            <g stroke="#E9EFEA" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+              <path d="M206 150 L150 238"/>
+              <path d="M206 150 L262 190 L270 238"/>
+              <path d="M206 150 L206 104"/>
+              <path d="M130 104 L282 104"/>
+            </g>
+            <circle cx="206" cy="80" r="15" fill="#E9EFEA"/>
+            <!-- alignment guides -->
+            <g stroke="#F2A900" stroke-width="2" stroke-dasharray="5 5" fill="none">
+              <path d="M262 190 L262 244"/>
+              <path d="M110 104 L300 104"/>
+            </g>
+            <circle cx="262" cy="190" r="9" fill="none" stroke="#F2A900" stroke-width="2.5"/>
+          </svg>
+          <div class="call-label"><span class="pill"><span class="rec" style="display:inline-block;margin-right:6px;vertical-align:1px"></span>Live · You</span></div>
+          <div class="call-pip"><span class="pill">Coach Priya</span></div>
+          <div class="cue"><b>Coach cue</b>Stack that front knee over your ankle and let your shoulders drop away from your ears. Lovely, hold for three breaths.</div>
+        </div>
+        <figcaption class="call-bar"><span><strong>Warrior II</strong> · 1-on-1 session</span><span>18:42 remaining</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="section" id="story">
+    <div class="wrap story-grid">
+      <div class="story-intro">
+        <p class="eyebrow">Our story</p>
+        <h2>It started on the Night Tube, at four in the morning</h2>
+        <p>James never planned to open a yoga studio. He drove the Northern line through the night, and after two years of 3am shifts in a driver's cab his lower back had given up on him.</p>
+        <blockquote class="pull" style="margin:0">"I thought yoga was for people with free time. It turned out to be for people with none."<cite>James, founder</cite></blockquote>
+      </div>
+      <ol class="timeline">
+        <li><span class="year">2016</span><div><h3>The 4am Club</h3><p>On his breaks in the Morden depot canteen, James starts stretching between the tables. Within a month six other drivers join him, and the cleaners call them "the 4am Club."</p></div></li>
+        <li><span class="year">2017</span><div><h3>Teacher training on days off</h3><p>He spends his rest days on 200 hours of yoga teacher training and practises cueing poses on anyone who will stand still, mostly his flatmate.</p></div></li>
+        <li><span class="year">2018</span><div><h3>A railway arch in Bermondsey</h3><p>The first studio opens under a railway arch. A train rumbles overhead every few minutes, so James turns it into a practice: hold the pose and breathe until it passes. Rumble Breath becomes our best-loved class.</p></div></li>
+        <li><span class="year">2020</span><div><h3>Gran Maggie and the ironing board</h3><p>In lockdown, James's 84-year-old gran in Aberdeen asks for help with her hip. He props a laptop on the ironing board and coaches her live, twice a week. Her friends ask for sessions too, and live 1-on-1 online coaching is born. 1,000 sessions are booked in the first month.</p></div></li>
+        <li><span class="year">2022</span><div><h3>North of the river, then north of the border</h3><p>Studios open in a former cotton mill in Manchester's Ancoats and a converted warehouse in Glasgow's Finnieston. Members start asking whether one membership could cover both.</p></div></li>
+        <li><span class="year">2024</span><div><h3>The Studio Passport</h3><p>It can. One membership now covers every city, with a free Rain Check swap to online whenever the weather wins.</p></div></li>
+        <li><span class="year">2026</span><div><h3>13 cities and one very loyal member</h3><p>Today 60+ coaches teach in 13 cities and online. There's still no studio in Aberdeen. Maggie is 90 and still books every Tuesday at 10:00.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CITIES -->
+  <section class="section" id="cities" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Studio locations</p>
+        <h2>Yoga studios in 13 UK cities</h2>
+        <p class="lede">Every studio is within walking distance of the main station and has showers, lockers and free mat hire. Choose a city to book your free first class.</p>
+      </div>
+      <div class="cities" id="city-grid"><!-- filled from CITIES below; static fallback for crawlers -->
+        <article class="city" id="london"><span class="area">Bermondsey · the original arch</span><h3>London</h3><p>Where it all began. Rumble Breath classes run daily under the railway.</p><a href="#book" data-city="London">Book in London →</a></article>
+        <article class="city" id="manchester"><span class="area">Ancoats · cotton mill</span><h3>Manchester</h3><p>Big windows, bare brick and our busiest Sunrise Flow.</p><a href="#book" data-city="Manchester">Book in Manchester →</a></article>
+        <article class="city" id="birmingham"><span class="area">Jewellery Quarter · canal-side</span><h3>Birmingham</h3><p>Slow Vinyasa beside the canal, lit by candles in winter.</p><a href="#book" data-city="Birmingham">Book in Birmingham →</a></article>
+        <article class="city" id="leeds"><span class="area">Holbeck · station side</span><h3>Leeds</h3><p>Home of the original Night Owl class for shift workers.</p><a href="#book" data-city="Leeds">Book in Leeds →</a></article>
+        <article class="city" id="glasgow"><span class="area">Finnieston · warehouse</span><h3>Glasgow</h3><p>Our largest room, with lunchtime Commuter Flow for the city centre.</p><a href="#book" data-city="Glasgow">Book in Glasgow →</a></article>
+        <article class="city" id="edinburgh"><span class="area">Leith · shore</span><h3>Edinburgh</h3><p>Harbour views and a Yin class that fills up for the Festival.</p><a href="#book" data-city="Edinburgh">Book in Edinburgh →</a></article>
+        <article class="city" id="liverpool"><span class="area">Baltic Triangle</span><h3>Liverpool</h3><p>Hot flow in a former rope works, with music on Fridays.</p><a href="#book" data-city="Liverpool">Book in Liverpool →</a></article>
+        <article class="city" id="bristol"><span class="area">Stokes Croft</span><h3>Bristol</h3><p>Street-art walls and a beginners' course that runs every month.</p><a href="#book" data-city="Bristol">Book in Bristol →</a></article>
+        <article class="city" id="cardiff"><span class="area">Pontcanna · by the park</span><h3>Cardiff</h3><p>Bilingual classes in Welsh and English, with outdoor flow in summer.</p><a href="#book" data-city="Cardiff">Book in Cardiff →</a></article>
+        <article class="city" id="belfast"><span class="area">Cathedral Quarter</span><h3>Belfast</h3><p>A cobbled-lane studio known for its Sunday restorative class.</p><a href="#book" data-city="Belfast">Book in Belfast →</a></article>
+        <article class="city" id="newcastle"><span class="area">Ouseburn · valley</span><h3>Newcastle</h3><p>A riverside studio with a popular 06:30 Power Flow.</p><a href="#book" data-city="Newcastle">Book in Newcastle →</a></article>
+        <article class="city" id="sheffield"><span class="area">Kelham Island · steelworks</span><h3>Sheffield</h3><p>Yoga for climbers and runners, in the shadow of the Peaks.</p><a href="#book" data-city="Sheffield">Book in Sheffield →</a></article>
+        <article class="city" id="nottingham"><span class="area">Hockley · lace market</span><h3>Nottingham</h3><p>Pregnancy and postnatal yoga, every day of the week.</p><a href="#book" data-city="Nottingham">Book in Nottingham →</a></article>
+        <article class="city online-card" id="anywhere"><span class="area">Anywhere in the UK and beyond</span><h3>Online 1-on-1</h3><p>No studio nearby? Your coach comes to you over live video. Just ask Maggie.</p><a href="#book" data-city="Online" data-interest="online">Book a free taster →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section online" id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Simple pricing</p>
+        <h2>Start free, then pick what fits your week</h2>
+      </div>
+      <div class="prices">
+        <article class="price">
+          <h3>Drop-in class</h3>
+          <div class="amount">£14 <small>/ class</small></div>
+          <p>Pay as you go at any studio.</p>
+          <ul class="ticks"><li>Any class, any city</li><li>Mat, towel and shower included</li><li>First class free</li></ul>
+          <a class="btn btn-ghost" href="#book" data-track="cta_price_dropin" data-interest="studio">Book free first class</a>
+        </article>
+        <article class="price featured">
+          <span class="tag">Most popular</span>
+          <h3>Studio Passport</h3>
+          <div class="amount">£79 <small>/ month</small></div>
+          <ul class="ticks"><li>Unlimited classes in all 13 cities</li><li>Free Rain Check swaps to online</li><li>One 20-min 1-on-1 check-in each month</li><li>Rolling monthly, cancel anytime</li></ul>
+          <a class="btn btn-primary" href="#book" data-track="cta_price_passport" data-interest="studio">Start with a free class</a>
+        </article>
+        <article class="price">
+          <h3>Live online 1-on-1</h3>
+          <div class="amount">£45 <small>/ 50 min</small></div>
+          <p>Or 4 sessions for £160.</p>
+          <ul class="ticks"><li>Your own coach, live on video</li><li>Written plan and replay after every session</li><li>Free 20-min taster first</li></ul>
+          <a class="btn btn-ghost" href="#book" data-track="cta_price_online" data-interest="online">Book free taster</a>
+        </article>
+      </div>
+      <p class="fine">All prices include VAT. Shift-worker rates are available at every studio with valid ID. One free first class and one free taster per person.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Questions</p>
+        <h2>Before you roll out your mat</h2>
+      </div>
+      <div class="faq">
+        <details open><summary>Is my first class really free?</summary><p>Yes. Your first studio class in any of our 13 cities is free, and your first live online 1-on-1 taster (20 minutes) is free too. No card needed to book.</p></details>
+        <details><summary>How does live online 1-on-1 yoga coaching work?</summary><p>You pick a coach and a time, join a two-way video call from your phone, tablet or laptop, and your coach watches and corrects your alignment as you move. Afterwards you get a written plan and a replay. All you need is enough floor space for a mat and a device that can see you.</p></details>
+        <details><summary>Can I use one membership in different cities?</summary><p>Yes. The Studio Passport covers unlimited classes at every James Yoga studio in the UK, plus Rain Check swaps to online sessions.</p></details>
+        <details><summary>I've never done yoga. Is that a problem?</summary><p>Not at all. Around a third of our members start with no experience. Beginner-labelled classes run daily in every city, and a 1-on-1 session is a good way to start if you'd rather learn in private.</p></details>
+        <details><summary>Can I cancel my membership?</summary><p>Yes. The Studio Passport is rolling monthly with no minimum term. Cancel from your account before your next billing date.</p></details>
+        <details><summary>Do you teach people with injuries or during pregnancy?</summary><p>Many of our coaches hold additional training in pregnancy and injury-aware yoga. Tell us when you book and we'll match you with the right coach. Please check with your GP or midwife first.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section book" id="book">
+    <div class="wrap book-grid">
+      <div>
+        <div class="section-head" style="margin-bottom:0">
+          <p class="eyebrow">Your first class is on us</p>
+          <h2>Book a free class or 1-on-1 taster</h2>
+          <p class="lede">Tell us where you are and what you'd like to try. A coach from your nearest studio will confirm your spot, usually within the hour.</p>
+        </div>
+        <ul class="book-points">
+          <li>No card details and no commitment</li>
+          <li>Mats and towels are waiting for you</li>
+          <li>Beginners, injuries and pregnancy all welcome</li>
+        </ul>
+        <p class="call-us">Prefer to talk? Call us, 7am to 9pm daily:<br><a href="tel:+442079460958" data-track="call_click">020 7946 0958</a></p>
+      </div>
+
+      <form class="form" id="lead-form" novalidate>
+        <div id="form-body" style="display:grid;gap:16px">
+          <fieldset class="field">
+            <legend>What would you like to try?</legend>
+            <div class="choice" style="margin-top:6px">
+              <label><input type="radio" name="interest" id="interest-studio" value="studio" checked><span><strong>Free studio class</strong>At a James Yoga studio</span></label>
+              <label><input type="radio" name="interest" id="interest-online" value="online"><span><strong>Free 1-on-1 taster</strong>20 min, live online</span></label>
+            </div>
+          </fieldset>
+          <div class="row">
+            <div class="field"><label for="f-name">First name</label><input id="f-name" name="name" autocomplete="given-name" required></div>
+            <div class="field"><label for="f-city">Nearest city</label>
+              <select id="f-city" name="city" required>
+                <option value="">Choose a city</option>
+                <option>London</option><option>Manchester</option><option>Birmingham</option><option>Leeds</option>
+                <option>Glasgow</option><option>Edinburgh</option><option>Liverpool</option><option>Bristol</option>
+                <option>Cardiff</option><option>Belfast</option><option>Newcastle</option><option>Sheffield</option>
+                <option>Nottingham</option><option value="Online">None nearby (online only)</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
+            <div class="field"><label for="f-phone">Mobile <span style="font-weight:400;color:var(--ink-2)">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="07…"></div>
+          </div>
+          <div class="field"><label for="f-time">Best time for you</label>
+            <select id="f-time" name="time">
+              <option>Early morning (06:00–09:00)</option>
+              <option>Lunchtime (12:00–14:00)</option>
+              <option selected>Evening (17:30–20:30)</option>
+              <option>Night Owl (21:00–22:30)</option>
+              <option>Weekends</option>
+            </select>
+          </div>
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
+          <input type="hidden" name="utm_term" id="utm_term">
+          <input type="hidden" name="gclid" id="gclid">
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <button class="btn btn-primary" type="submit">Book my free session</button>
+          <p class="consent">We'll only use your details to arrange your session. See our <a href="#privacy">privacy policy</a>.</p>
+        </div>
+        <div class="success" id="form-success" hidden tabindex="-1">
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" aria-hidden="true"><circle cx="28" cy="28" r="26" stroke="var(--moss)" stroke-width="3"/><path d="M17 29l7.5 7.5L39 21" stroke="var(--moss)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3 id="success-title">You're on the board.</h3>
+          <p id="success-msg">A coach will email you shortly to confirm your free session.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="brand-name" style="color:var(--ink)">James Yoga</p>
+        <p style="margin-top:10px;max-width:40ch">Yoga studios in 13 UK cities and live online 1-on-1 coaching. Founded by a Night Tube driver who needed it more than anyone.</p>
+        <p style="margin-top:14px">hello@jamesyogastudio.co.uk<br>020 7946 0958</p>
+      </div>
+      <div>
+        <h3>Yoga near you</h3>
+        <ul class="cols">
+          <li><a href="#london">Yoga London</a></li><li><a href="#manchester">Yoga Manchester</a></li>
+          <li><a href="#birmingham">Yoga Birmingham</a></li><li><a href="#leeds">Yoga Leeds</a></li>
+          <li><a href="#glasgow">Yoga Glasgow</a></li><li><a href="#edinburgh">Yoga Edinburgh</a></li>
+          <li><a href="#liverpool">Yoga Liverpool</a></li><li><a href="#bristol">Yoga Bristol</a></li>
+          <li><a href="#cardiff">Yoga Cardiff</a></li><li><a href="#belfast">Yoga Belfast</a></li>
+          <li><a href="#newcastle">Yoga Newcastle</a></li><li><a href="#sheffield">Yoga Sheffield</a></li>
+          <li><a href="#nottingham">Yoga Nottingham</a></li><li><a href="#online">Online 1-on-1 yoga</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#story">Our story</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <!-- TODO: link to real pages; Google Ads requires a visible privacy policy -->
+          <li><a href="#privacy" id="privacy">Privacy policy</a></li>
+          <li><a href="#terms">Terms &amp; cancellations</a></li>
+          <li><button type="button" id="cookie-open" style="all:unset;cursor:pointer;color:var(--ink-2)">Cookie settings</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© <span id="year">2026</span> James Yoga Studio Ltd. Registered in England &amp; Wales.</span>
+      <span>Yoga complements, and never replaces, medical advice.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta" aria-label="Quick actions">
+  <a class="btn btn-ghost" href="tel:+442079460958" data-track="call_click">Call</a>
+  <a class="btn btn-primary" href="#book" data-track="cta_sticky">Book free class</a>
+</div>
+
+<div class="cookie" id="cookie" role="dialog" aria-label="Cookie preferences" hidden>
+  <strong>Cookies, the non-edible kind</strong>
+  <p>We use cookies to measure our adverts and improve this site. You can accept or reject them. The site works either way.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-ghost" type="button" id="cookie-reject">Reject</button>
+    <button class="btn btn-primary" type="button" id="cookie-accept">Accept</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var CITIES = {
+    london:     { name: "London",     area: "Bermondsey",         cls: "Rumble Breath",   times: ["06:45","07:30","12:30","18:15","19:30","22:00"] },
+    manchester: { name: "Manchester", area: "Ancoats",            cls: "Sunrise Flow",    times: ["06:30","07:15","12:15","18:00","19:15"] },
+    birmingham: { name: "Birmingham", area: "Jewellery Quarter",  cls: "Slow Vinyasa",    times: ["07:00","12:30","18:00","19:30"] },
+    leeds:      { name: "Leeds",      area: "Holbeck",            cls: "Night Owl",       times: ["07:00","12:15","18:30","22:00"] },
+    glasgow:    { name: "Glasgow",    area: "Finnieston",         cls: "Commuter Flow",   times: ["06:45","12:30","17:45","19:00"] },
+    edinburgh:  { name: "Edinburgh",  area: "Leith",              cls: "Yin & Breath",    times: ["07:00","12:30","18:15","20:00"] },
+    liverpool:  { name: "Liverpool",  area: "Baltic Triangle",    cls: "Hot Flow",        times: ["06:30","12:15","18:00","19:30"] },
+    bristol:    { name: "Bristol",    area: "Stokes Croft",       cls: "Beginners",       times: ["07:15","12:30","18:30","20:00"] },
+    cardiff:    { name: "Cardiff",    area: "Pontcanna",          cls: "Ioga Llif",       times: ["07:00","12:15","18:00"] },
+    belfast:    { name: "Belfast",    area: "Cathedral Quarter",  cls: "Restorative",     times: ["07:00","12:30","18:15","19:45"] },
+    newcastle:  { name: "Newcastle",  area: "Ouseburn",           cls: "Power Flow",      times: ["06:30","12:15","18:00","19:30"] },
+    sheffield:  { name: "Sheffield",  area: "Kelham Island",      cls: "Yoga for Climbers", times: ["07:00","12:30","18:30"] },
+    nottingham: { name: "Nottingham", area: "Hockley",            cls: "Pregnancy Yoga",  times: ["09:30","12:30","18:00","19:30"] }
+  };
+
+  function track(event, params) {
+    try { window.dataLayer.push(Object.assign({ event: event }, params || {})); } catch (e) {}
+    try { if (typeof gtag === "function") gtag("event", event, params || {}); } catch (e) {}
+  }
+
+  /* ---------- URL params: UTM capture + city message-match for ads ---------- */
+  var params = new URLSearchParams(location.search);
+  ["utm_source","utm_medium","utm_campaign","utm_term","gclid"].forEach(function (k) {
+    var el = document.getElementById(k);
+    if (el && params.get(k)) el.value = params.get(k);
+  });
+
+  function findCitySlug() {
+    var raw = (params.get("city") || location.hash.replace("#", "") || params.get("utm_term") || "").toLowerCase();
+    if (!raw) return null;
+    if (CITIES[raw]) return raw;
+    for (var slug in CITIES) { if (raw.indexOf(slug) !== -1) return slug; }
+    return null;
+  }
+  var citySlug = findCitySlug();
+  var city = citySlug ? CITIES[citySlug] : null;
+
+  if (city) {
+    document.getElementById("hero-eyebrow").textContent = "Yoga in " + city.name + " · " + city.area + " studio · Live online 1-on-1";
+    document.getElementById("hero-title").innerHTML = "Yoga classes in " + city.name + ", and a <em>live 1-on-1 coach</em> wherever you are.";
+    document.getElementById("hero-lede").textContent = "Our " + city.area + " studio is a short walk from the station and runs " + city.cls + " and daily beginner classes. Add live private coaching over video whenever you like. Your first class is free.";
+    document.title = "Yoga " + city.name + " · James Yoga Studio";
+    var sel = document.getElementById("f-city");
+    sel.value = city.name;
+    var card = document.getElementById(citySlug);
+    if (card) card.classList.add("is-target");
+  }
+
+  /* ---------- Departure board: live UK clock + next classes ---------- */
+  function ukNow() {
+    var parts = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/London", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(new Date());
+    var h = +parts.find(function (p) { return p.type === "hour"; }).value;
+    var m = +parts.find(function (p) { return p.type === "minute"; }).value;
+    return { h: h, m: m, mins: h * 60 + m };
+  }
+  function toMins(t) { var p = t.split(":"); return +p[0] * 60 + +p[1]; }
+  function nextFor(slug, nowMins) {
+    var c = CITIES[slug];
+    for (var i = 0; i < c.times.length; i++) {
+      var tm = toMins(c.times[i]);
+      if (tm > nowMins) return { slug: slug, time: c.times[i], mins: tm, tomorrow: false };
+    }
+    return { slug: slug, time: c.times[0], mins: toMins(c.times[0]) + 1440, tomorrow: true };
+  }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;" }[c]; }); }
+
+  var rotate = 0;
+  function renderBoard() {
+    var now = ukNow();
+    document.getElementById("clock").textContent = String(now.h).padStart(2, "0") + ":" + String(now.m).padStart(2, "0");
+    var all = Object.keys(CITIES).map(function (s) { return nextFor(s, now.mins); })
+      .sort(function (a, b) { return a.mins - b.mins; });
+    var rows = [];
+    if (citySlug) {
+      rows.push(all.find(function (r) { return r.slug === citySlug; }));
+      all = all.filter(function (r) { return r.slug !== citySlug; });
+    }
+    var start = all.length ? rotate % all.length : 0;
+    var rest = all.slice(start).concat(all.slice(0, start));
+    rows = rows.concat(rest).slice(0, 5);
+
+    var coachHour = now.h >= 6 && (now.h < 22 || (now.h === 22 && now.m <= 30));
+    var html = '<tr><td>' + (coachHour ? "NOW" : "06:00") + '</td><td class="dest">ONLINE 1-ON-1</td><td>Your choice</td><td class="' + (coachHour ? "status-live" : "") + '">' + (coachHour ? "Coach free" : "Book ahead") + '</td></tr>';
+    rows.forEach(function (r) {
+      var c = CITIES[r.slug];
+      var diff = r.mins - now.mins;
+      var status = r.tomorrow ? "Tomorrow" : diff <= 15 ? "Boarding" : diff <= 60 ? "In " + diff + " min" : "On time";
+      html += '<tr class="' + (r.slug === citySlug ? "pinned" : "") + '"><td>' + esc(r.time) + '</td><td class="dest">' + esc(c.name) + '</td><td>' + esc(c.cls) + '</td><td>' + esc(status) + '</td></tr>';
+    });
+    document.getElementById("board-rows").innerHTML = html;
+  }
+  renderBoard();
+  setInterval(function () { rotate++; renderBoard(); }, 8000);
+
+  /* ---------- CTA wiring: prefill the form, track clicks ---------- */
+  function setInterest(v) {
+    var el = document.getElementById(v === "online" ? "interest-online" : "interest-studio");
+    if (el) el.checked = true;
+  }
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest("a, button");
+    if (!a) return;
+    if (a.dataset.track) track(a.dataset.track === "call_click" ? "call_click" : "cta_click", { cta: a.dataset.track });
+    if (a.dataset.interest) setInterest(a.dataset.interest);
+    if (a.dataset.city) {
+      var sel = document.getElementById("f-city");
+      sel.value = a.dataset.city;
+      if (a.dataset.city === "Online") setInterest("online");
+      track("city_select", { city: a.dataset.city });
+    }
+  });
+
+  /* ---------- Lead form (conversion) ---------- */
+  var form = document.getElementById("lead-form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var err = document.getElementById("form-error");
+    var name = document.getElementById("f-name");
+    var email = document.getElementById("f-email");
+    var citySel = document.getElementById("f-city");
+    var problem = !name.value.trim() ? [name, "Add your first name so your coach knows who to expect."]
+      : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()) ? [email, "Enter an email address like name@example.com so we can confirm your spot."]
+      : !citySel.value ? [citySel, "Choose your nearest city, or pick \"None nearby\" for online coaching."]
+      : null;
+    if (problem) {
+      err.textContent = problem[1];
+      err.hidden = false;
+      problem[0].focus();
+      return;
+    }
+    err.hidden = true;
+    var data = Object.fromEntries(new FormData(form).entries());
+
+    /* TODO: send `data` to your CRM / booking backend here, e.g.
+       fetch("/api/leads", { method: "POST", headers: {"Content-Type":"application/json"}, body: JSON.stringify(data) }); */
+
+    track("generate_lead", { interest: data.interest, city: data.city, currency: "GBP", value: data.interest === "online" ? 45 : 14 });
+    if (window.ADS_CONVERSION) {
+      try { gtag("event", "conversion", { send_to: window.ADS_CONVERSION }); } catch (e2) {}
+    }
+
+    var online = data.interest === "online";
+    document.getElementById("success-title").textContent = "You're on the board, " + data.name.trim() + ".";
+    document.getElementById("success-msg").textContent = online
+      ? "A coach will email " + data.email + " shortly with times for your free 20-minute live 1-on-1 taster."
+      : "Your " + data.city + " studio will email " + data.email + " shortly to confirm your free first class.";
+    document.getElementById("form-body").hidden = true;
+    var ok = document.getElementById("form-success");
+    ok.hidden = false;
+    ok.focus();
+  });
+
+  /* ---------- Cookie consent (Consent Mode v2) ---------- */
+  var KEY = "jys_consent";
+  var banner = document.getElementById("cookie");
+  function applyConsent(granted) {
+    var v = granted ? "granted" : "denied";
+    gtag("consent", "update", { ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v });
+  }
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) {}
+  if (saved === "granted" || saved === "denied") applyConsent(saved === "granted");
+  else banner.hidden = false;
+  function choose(granted) {
+    applyConsent(granted);
+    try { localStorage.setItem(KEY, granted ? "granted" : "denied"); } catch (e) {}
+    banner.hidden = true;
+  }
+  document.getElementById("cookie-accept").addEventListener("click", function () { choose(true); });
+  document.getElementById("cookie-reject").addEventListener("click", function () { choose(false); });
+  document.getElementById("cookie-open").addEventListener("click", function () { banner.hidden = false; });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
